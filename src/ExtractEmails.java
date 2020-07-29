@@ -22,5 +22,7 @@ public class ExtractEmails {
 
         validEmails
                 .forEach(e -> System.out.println(e));
+        
+        
     }
 }
