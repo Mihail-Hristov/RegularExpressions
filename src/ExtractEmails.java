@@ -8,7 +8,7 @@ public class ExtractEmails {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        String regex = "(?<name>[A-Za-z0-9]+[.-_]*[A-Za-z0-9]+)@(?<domain>[A-Za-z]+[-]?[A-Za-z]+[.][A-Za-z]+[.]?[A-Za-z]+)";
+        String regex = "(^|\\s)(?<name>[A-Za-z0-9]+[.-_]*[A-Za-z0-9]+)@(?<domain>[A-Za-z]+[-]?[A-Za-z]+)([.][A-Za-z]+)*";
         Pattern pattern = Pattern.compile(regex);
         List<String> validEmails = new ArrayList<>();
 
