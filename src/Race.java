@@ -54,5 +54,7 @@ public class Race {
                 .sorted((r1, r2) -> r2.getValue().compareTo(r1.getValue()))
                 .limit(3)
                 .forEach(r -> System.out.println(output.remove(0) + r.getKey()));
+
+
     }
 }
